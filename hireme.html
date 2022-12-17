@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hire Me</title>
+    <link rel="stylesheet" href="hireme.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+</head>
+
+<body>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Shubh<span>am.</span></a></div>
+            <ul class="menu">
+                <li><a href="index.html" class="menu-btn">Home</a></li>
+                <li><a href="index.html#about" class="menu-btn">About</a></li>
+                <li><a href="index.html#services" class="menu-btn">Services</a></li>
+                <li><a href="index.html#skills" class="menu-btn">Skills</a></li>
+                <li><a href="index.html#teams" class="menu-btn">Teams</a></li>
+                <li><a href="index.html#contact" class="menu-btn">Contact</a></li>
+               <!-- <a href='https://www.linkedin.com/in/shubham-chandra-/' class="fab fa-linkedin"></a>
+                <a href='https://twitter.com/iShubhamChandra' class="fab fa-twitter"></a>
+                <a href='https://www.instagram.com/shubhamchandra_/' class="fab fa-instagram"></a>
+                <a href='https://github.com/shubham96-eng' class="fab fa-github"></a>
+                <a href='https://www.facebook.com/shubham.chandra.71216/' class="fab fa-facebook"></a>
+                <a href='https://www.youtube.com/channel/UC6vuYn0WatopCyx09NXyF9g' class="fab fa-youtube"></a>-->
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- hire me section start -->
+    <section class="hire" id="hire">
+        <div class="max-width">
+            <div class="hire-content">
+                <div class="text-1">Hire Me</div>
+                <div class="text-2">“I think people hire me because I am good at what I love to do.”</div>
+                <div class="text-3">My work speaks for the goals of my clients; it’s crafted carefully, studied through
+                    the gamut of human psychology, and created to stand the test of time. My role is to listen and
+                    trust, research and explore, create and design, present and deliver, and to cater to your needs.
+
+                    <br><br>Design is not just my passion, it’s a big part of my lifestyle. Yeah, I know it’s a cliché.
+                    Here, fill out the questionnaire below or read client feedbacks while I think of something less
+                    douchéy.
+
+                    <br><br>I am currently <a>accepting</a> new freelance design projects.
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+
+    <!-- Qus and message section start-->
+
+    <section class="qus" id="qus">
+        <div class="max-width">
+            <div class="text-1">Questionnaire</div>
+            <div class="text-2">Requesting an estimate for a project only takes a few minutes of your time and costs
+                absolutely nothing. This questionnaire was built to help me identify your needs for the project.
+
+                <br><br> After you click the send button, I will send you an estimate for a review. Also take a look at
+                my <a>Frequently Asked Questions.</a>
+            </div>
+        </div>
+        <br>
+        <form action="#">
+            <div class="fields">
+                <div class="field name">
+                    <label for="name">Your name</label>
+                    <br><input type="text" placeholder="Name" required>
+                </div>
+                <div class="field email">
+                    <label for="email">Your email address</label>
+                    <br><input type="email" placeholder="" required>
+                </div>
+            </div>
+            <br><br><br>
+            <div class="fields">
+                <div class="field">
+                    <label for="field">Your website, if you have one</label>
+                    <input type="text" placeholder="http://" required>
+                </div>
+                <br><br><br>
+                <div class="field textarea">
+                    <label for="textarea">Your location</label>
+                    <br><textarea col="30" row="10" placeholder="ie. Clifornia, USA or Tokyo" required></textarea>
+                </div>
+            </div>
+            <br>
+            <div class="button">
+                <button type="submit">Send message</button>
+            </div>
+            <br>
+            <hr>
+
+            <h1>Project details</h1>
+            <div class="check">
+                <p>What can i help you with?</p>
+                <div class=" checks">
+                    <input type="checkbox" id="web" name="design" value="web">
+                    <label for="web">Web Design</label><br>
+                </div>
+                <div class=" develop">
+                    <input type="checkbox" id="Web Development" name="fav_language" value="Web Development">
+                    <label for="Develop">Web Development</label><br>
+                </div>
+                <div class="identity">
+                    <input type="checkbox" id=" Identity Design" name="fav_language" value=" Identity Design">
+                    <label for="identity">Identity Design</label>
+                </div>
+                <div class="other">
+                    <input type="checkbox" id="other" name="fav_language" value=" Identity Design">
+                    <label for="other">other</label>
+                </div>
+                <br>
+                <h2>Web Design is all about the visuals, no code. Project deliverable will be in PSD format, and you
+                    will need a developer for the site to be fully functional. This said, If you need a fully functional
+                    website from wireframing to launch, please select Web Design and Web Development. I won't code other
+                    designer's work.</h2>
+            </div>
+
+
+            <div class="check_s1">
+                <br>
+                <p>Is this is a new project or a redesign for an existing site / brand?</p>
+                <div class="New project">
+                    <input type="radio" id="New project" name="fav_language" value="New project">
+                    <label for="New project">New project</label><br>
+                </div>
+                <div class="Redesign">
+                    <input type="radio" id="Redesign" name="fav_language" value="Redesign">
+                    <label for="Redesign">Redesign</label><br>
+                </div>
+            </div>
+
+            <div class="timeline">
+
+                <br>
+                <h2>Timeline.<a>When do you need this completed by?</a></h2>
+                <div class="select">
+                    <select id="country" name="Please choose one...">
+                        <option value="please">Please choose one...</option>
+                        <option value="possible">as soon as possible</option>
+                        <option value="3">Within 3 weeks</option>
+                        <option value="6">Within 6 weeks</option>
+                        <option value="9">Within 9 weeks</option>
+                        <option value="12">Within 12 weeks</option>
+                        <option value="available">When you are available, let me know</option>
+                    </select>
+                </div>
+                <br>
+                <h3>I generally recommend at least three weeks for most projects, to ensure that the appropriate
+                    research and creative output is the best it can be.</h3>
+            </div>
+
+            <div class="budget">
+                <br>
+                <h2>Budget.<a>How much are you planning to invest in the project?(USD)</a></h2>
+                <div class="please">
+                    <select id="please" name="Please choose one...">
+                        <option value="australia">Please choose one...</option>
+                        <option value="australia">
+                            <$1500< /option>
+                        <option value="canada">$1500-$25,000</option>
+                        <option value="usa">$25,000-$35,000</option>
+                        <option value="canada">$45,000-$75,000</option>
+                        <option value="canada">$75,000-$10,000</option>
+                        <option value="canada">$10,000+</option>
+                    </select>
+                </div>
+                <br>
+                <h3>Design isn't a commodity, meaning that you will get different costs from every designer. I listen to
+                    your specific needs first, and then put together a customized estimate based on these needs. Please
+                    provide a rough idea of what you are willing to invest, keeping in mind that the more you can
+                    invest, the more I can invest in your project.</h3>
+            </div>
+
+
+            <br><br>
+            <h4>From my FAQ:</h4>
+            <div class="faq">
+                <h5><a href="faq1.html"></a>How much does it cost to work with you?</h5>
+                <h6>How is the cost of your services determined?</h6>
+            </div>
+
+            <br>
+            <div class="why">
+                <p>Why is the site/ redesign / project needed? Who is the audience?</p>
+                <label for="textarea"></label>
+                <textarea col="30" row="10" placeholder="" required></textarea>
+
+                <h2>Is it a new site for an event or business, or an existing but outdated site in need of technical or
+                    visual upgrades? Information about target group; i.e. gender, age group, country, yearly income,
+                    profession, hobbies and interests is very helpful to narrow down the ideal audience.</h2>
+            </div>
+
+            <br><br>
+            <div class="objectives">
+                <p>What are the primary objectives and goals (long term and short term) for the project?</p>
+                <label for="textarea"></label>
+                <br><textarea col="30" row="10" placeholder="" required></textarea>
+
+                <h2>Generate sales and leads? Get your business name out there to create stronger awareness for your
+                    brand? What do you want to achieve with my help?</h2>
+            </div>
+            <br><br>
+            <div class="details">
+                <p>Please provide any additional details for the project</p>
+                <label for="textarea"></label>
+                <br><textarea col="30" row="10" placeholder="" required></textarea>
+
+                <h2>Personal preference, a list of good and bad examples, colors, overall message, competitors in your
+                    field etc.</h2>
+            </div>
+
+            <hr>
+
+            <div class="text-3">A helping hand</div>
+            <div class="fields">
+                <div class="help">
+                    <label for="text">How did you find my services?</label>
+                    <br><input type="text" placeholder="" required>
+                </div>
+                <div class="hand">
+                    <label for="web">Your favrourite YouTube video?</label>
+                    <br><input type="web" placeholder="http//" required>
+                </div>
+            </div>
+
+
+            <div class="chose">
+                <p>Please provide any additional details for the project</p>
+                <label for="textarea"></label>
+                <br><textarea col="30" row="10" placeholder="" required></textarea>
+            </div>
+            <div class="g-recaptcha brochure__form__captcha" data-sitekey="6Lf7LWwgAAAAANY7gDh-XUP58R0L5rqfXH2FsWV0">
+
+            </div>
+            <br><a href='https://www.linkedin.com/in/shubham-chandra-/' class="fab fa-linkedin"></a>
+            <a href='https://twitter.com/iShubhamChandra' class="fab fa-twitter"></a>
+            <a href='https://www.instagram.com/shubhamchandra_/' class="fab fa-instagram"></a>
+            <a href='https://github.com/shubham96-eng' class="fab fa-github"></a>
+            <a href='https://www.facebook.com/shubham.chandra.71216/' class="fab fa-facebook"></a>
+            <a href='https://www.youtube.com/channel/UC6vuYn0WatopCyx09NXyF9g' class="fab fa-youtube"></a>
+            <div class="button2">
+                <button type="submit">Send the questionnaire</button>
+            </div>
+            <br>
+        </form>
+        <hr>
+    </section>
+
+    <!-- footer section start -->
+    <footer>
+
+        <div class="foot">
+            <span>Created By <a href="#">ShubhamChandra</a> | <i class="far fa-copyright"></i> 2020. All right
+                reserved</span>
+        </div>
+    </footer>
+
+    <script src="hireme.js"></script>
+</body>
+
+</html>

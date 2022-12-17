@@ -1,0 +1,547 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+/* navbar styling */
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+    padding: 15px 0;
+    background: black;
+}
+.navbar .max-width{
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar .logo a span{
+    color: crimson;
+    transition: all 0.3s ease;
+}    
+/*.navbar.sticky .logo a span{
+    color: #fff;
+}*/
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease; 
+}
+.navbar .menu li a:hover{
+    color: crimson;
+}
+.navbar.sticky .menu li a:hover{
+    color: #fff;
+}
+
+/* menu btn styling */
+.menu-btn{
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+.scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: crimson;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color:#fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.scroll-up-btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* hire me section styling */
+section{
+    padding: 100px 0;
+}
+.hire{
+    display: flex;
+    background: black no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    font-family: 'ubuntu', sans-serif;
+}
+.hire .hire-content .text-1{
+    font-size: 60px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 0%;
+}
+.hire .hire-content .text-2{
+    font-size: 34px;
+    font-weight: 450;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 30px;
+    color: dimgray;
+    font-style: italic;
+    text-align: center;
+}
+.hire .hire-content .text-3{
+    font-size: 23px;
+    text-align: center;
+    font-weight: 250;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    color: grey;
+    text-align: justify;
+}
+.hire .hire-content .text-3 a{
+    color: crimson;
+}
+
+
+  /* qus section styling */
+  section{
+    padding: 100px 0;
+}
+.qus .text-1{
+    font-size: 50px;
+    font-weight: 300;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: crimson;
+    text-decoration: underline;
+    margin-left: 200px;
+    margin-right: 80px;
+}
+.qus .text-2{
+    font-size: 20px;
+    margin: 5px 5px;
+    margin-top: 20px;
+    color: grey;
+    text-align: justify;
+    margin-left: 200px;
+    margin-right:200px;
+}
+.qus .text-2 a{
+    color: crimson;
+}
+.qus form .fields{
+    display: flex;
+}
+.qus form .fields .field input{
+    margin-left: 180px;
+    margin-right: 0px;
+    height: 45px;
+    margin-bottom: 15px;
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-color: crimson;
+}
+.qus form .name label,
+.qus form .field label{
+   font-size: 30px;
+   font-family: 'Times New Roman';
+   font-size:x-large;
+   color: grey; 
+   line-height: 24px;
+   
+}
+.qus form .name,
+.qus form .field{
+    margin-right: 0px;
+    margin-left: 280px;
+    width: 70%;
+    padding: 12px 20px;
+}
+.qus form .name,
+.qus form .field:hover{
+    color: crimson;
+    background: none;
+}
+.qus form .email label,
+.qus form .textarea label{
+    font-size: 30px;
+    font-family: 'Times New Roman';
+    font-size:x-large;
+ }
+.qus form .email,
+.qus form .textarea{
+    margin-left: 0px;
+    margin-right: 50px;
+    width: 70%;
+    height: 40px;
+}
+.qus form .field input,
+.qus form .textarea textarea{
+    border: 1px solid crimson;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Popppins', sans-serif;
+}
+.qus form .textarea textarea{
+    padding-top: 10px;
+    resize: none;
+}
+.qus form .button{
+    height: 47px;
+    width: 170px;
+    margin-left: 300px;
+    margin-top: 10px;
+}
+.qus form .button button{
+    border: 2px solid crimson;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.qus form .button button:hover{
+    color: crimson;
+    background: none;
+}
+hr{
+    color: black;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+h1{
+    margin-top: 20px;
+    margin-left: 300px;
+    margin-right: 100px;
+    font-family: 'Times New Roman';
+    font-size: 40px;
+    font-weight: 250;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.qus .check p,
+.qus .check_s1 p{
+    margin-top: 20px;
+    margin-left: 300px;
+    margin-right: 200px;
+    font-size: large;
+    color: dimgrey;
+    font-weight: 100;
+    font-family: 'Times New Roman';
+}
+
+.qus .check .checks, .identity, .develop, .other, .check_s1 .project, .check_s1 .Redesign{
+    margin-top: 10px;
+    margin-left: 300px;
+    margin-right: 100px;
+    font-family: 'Times New Roman';
+
+}
+.qus .check h2, .timeline h3, .budget h3, .why h2, .objectives h2, .details h2{
+    margin-left: 300px;
+    margin-right: 250px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+    font-weight: normal;
+    color: rgb(144, 141, 141);
+    font-style: italic;
+}
+.qus .timeline h2, .budget h2{
+    margin-top: 30px;
+    margin-left: 300px;
+    margin-right: 100px;
+    font-family: 'Times New Roman';
+    font-size: x-large;
+    font-weight: normal;
+}
+.qus .timeline h2 a, .budget h2 a{
+    color: dimgrey;
+    font-size: large;
+    font-weight: 100;
+}
+.qus .timeline .select{
+    margin-top: 10px;
+    margin-left: 300px;
+    margin-right: 100px;
+    font-family: 'Times New Roman';
+}
+.qus .budget .please{
+    margin-top: 10px;
+    margin-left: 300px;
+    margin-right: 100px;
+    width: 70%;
+    height: 40px;
+    font-family: 'Times New Roman';
+}
+h4{
+    margin-top: 30px;
+    margin-left: 300px;
+    margin-right: 100px;
+    font-family: 'Times New Roman';
+    color: dimgrey;
+}
+h5,
+h6{
+    color: crimson;
+    margin-top: 10px;
+    margin-left: 300px;
+    margin-right: 100px;
+    font-family: 'Times New Roman';
+    font-size: medium;
+    font-weight: 100;
+    font-style: italic;
+}
+h5:hover,
+h6:hover{
+    color: black;
+    font-weight: 300;
+    
+}
+
+.qus form .why p, form .objectives p, form .details p, form .chose p{
+    margin-top: 30px;
+    margin-left: 300px;
+    margin-right: 100px;
+    font-family: 'Times New Roman';
+    font-weight: large;
+    color: rgb(69, 68, 68);
+    font-size: large;
+    font-weight: 100;
+}
+.qus .why textarea, .objectives textarea, .details textarea, .chose textarea{
+    margin-top: 10px;
+    margin-left: 300px;
+    margin-right: 200px;
+    font-family: 'Times New Roman';
+    font-weight: 100;
+    font-size: x-large;
+    color: crimson;
+    width: 800px;
+    height: 130px;
+    padding-top: 10px;
+    outline: none;
+    padding: 20px;
+    resize: both;
+    overflow: auto;
+}
+.qus hr{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 300px;
+    margin-right: 100px;
+}
+
+.qus .text-3{
+    margin-top: 20px;
+    margin-left: 300px;
+    margin-right: 300px;
+    font-size: x-large;
+    font-weight: 200;
+    font-family: 'Times New Roman';
+}
+.qus .fields .help{
+    margin-top: 20px;
+    margin-left: 300px;
+    margin-right: 100px;
+    font-size: large;
+    font-weight: 250;
+    color: dimgrey;
+    font-family: 'Times New Roman';
+}
+.qus .fields .hand{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: 270px;
+    font-size: large;
+    font-weight: 250;
+    color: dimgrey;
+    font-family: 'Times New Roman';
+}
+.qus .fields .help input,
+.qus .fields .hand input{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 120%;
+    height: 50px;
+    color: crimson;
+    resize: none;
+    outline: crimson;
+    padding: 0 15px;
+    font-family: 'Times New Roman';
+    font-weight: 200;
+    font-size: x-large;    
+}
+.qus .g-recaptcha{
+margin-left: 300px;
+margin-right: 200px;
+}
+.qus .button2{
+    margin-top: 10px;
+    margin-left: 900px;
+    margin-right: 0px;
+    align-items: right;
+    width: 200;
+    position: right;
+    color: crimson;
+    size: 100;
+}
+/* footer section styling */
+footer{
+    font-family: 'Times New Roman';
+    text-align: center;
+    background: #111;
+    padding: 20px 23px;
+    color: #fff;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.fab{
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: crimson;
+    margin-bottom: 10px;
+
+}
+.fab:hover {
+    opacity: 0.7;
+    color: white;
+}
+footer span a{
+    color: crimson;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+/* responsive media query start */
+@media (max-width: 1104px){
+    .hire .max-width{
+        text-align: center;
+    }
+}
+    @media (max-width: 991px){
+        .max-width{
+            padding: 0 50px;   
+    }
+}
+
+@media (max-width: 947px){
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before{ 
+        content: "\f00d";
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+     .navbar .menu li{
+         display: block;
+     }
+     .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    
+    .hire .hire-content .text-1{
+        font-size: 55px;
+    }
+    .hire .hire-content .text-2{
+        font-size: 30px;
+    }
+    .hire .hire-content .text-3{
+        font-size: 20px;
+    }  
+}
+
+@media (max-width: 690px){
+    .max-width{
+        padding: 0 23px;   
+    }
+    .hire .hire-content .text-1{
+        font-size: 52px;
+    }
+    .hire .hire-content .text-2{
+        font-size: 25px;
+    }
+    .hire .hire-content .text-3{
+        font-size: 15px;
+    }  
+}
+
+@media (max-width: 500px){
+    .hire .hire-content .text-1{
+        font-size: 48px;
+    }
+    .hire .hire-content .text-2{
+        font-size: 25px;
+    }
+    .hire .hire-content .text-3{
+        font-size: 12px;
+    }
+}
